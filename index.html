@@ -6,35 +6,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Yekaterina Jalette</title>
-    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css' />
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
 </head>
+<header>
+
+    <nav id="nav-about">
+        <ul>
+            <li><a href="">About Me</a></li>
+            <li><a href="">My Skills</a></li>
+            <li><a href="">My Projects</a></li>
+        </ul>
+    </nav>
+</header>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="">About Me</a></li>
-                <li><a href="">My Skills</a></li>
-                <li><a href="">My Projects</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main id="intro"><img src="images/monitor.svg"></main>
+    <main id="intro">
+        <section id='typedtext'></section>
+    </main>
     <main id="about">
-        <section id='myPic'><img src="images/map-pic.jpg"></section>
-        <section id="about-text">
-            <p><img src="images/monitor.svg">I'm fairly new to web development but I am a fast learner and am working on my programming skills daily.
-                <br> Please have a look at some of the projects I have created so far.</p>
+        <section id='myPic'><img src="images/map-pic-orange-noPic.jpg"></section>
+    </main>
+    <!--
+<main id="intro">
+    <p>I'm fairly new to web development but I am a fast learner and am working on my programming skills daily.
+        <br>Please have a look at some of the websites I have created so far.</p>
+<p>I'm a Czech Republic based web designer & front‑end developer focused on crafting clean  & user‑friendly experiences.</p>
+</main>
+<main id="skills">
+</main>
+-->
+    <main id="projects">
+        <p>Please have a look at some of the websites I have created so far</p>
+        <section id="link" class="container"><img src="images/link.png">
+            <div class="middle">
+                <div class="text">Link it</div>
+            </div>
+        </section>
+        <section id="nyc" class="container"><img src="images/nyc-news.png">
+            <div class="middle">
+                <div class="text">NYC today</div>
+            </div>
+        </section>
+        <section id="stitch" class="container"><img src="images/stitch.png">
+            <div class="middle">
+                <div class="text">Stitch</div>
+            </div>
         </section>
     </main>
-    <main id="skills"></main>
-    <main id="projects">
-        <section id=""></section>
-        <section id=""></section>
-        <section id=""></section>
+    <main id="footer">
+        <p id="copy">&copy; 2018 Yekaterina Jalette</p>
+        <ul id="footer-social">
+            <li><a href=""><i class="fa fa-github"></i></a></li>
+            <li><a href=""><i class="fa fa-envelope-o"></i></a></li>
+            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+        </ul>
     </main>
-    <main id="footer"></main>
+
+    <script>
+        // set up text to print, each item in array is new line
+        var aText = new Array(
+            "Hi! I'm Yekaterina Jalette",
+            "I'm a New York based",
+            "front‑end developer"
+
+        );
+        var iSpeed = 100; // time delay of print out
+        var iIndex = 0; // start printing array at this posision
+        var iArrLength = aText[0].length; // the length of the text array
+        var iScrollAt = 20; // start scrolling up at this many lines
+
+        var iTextPos = 0; // initialise text position
+        var sContents = ''; // initialise contents variable
+        var iRow; // initialise current row
+
+        function typewriter() {
+            sContents = ' ';
+            iRow = Math.max(0, iIndex - iScrollAt);
+            var destination = document.getElementById("typedtext");
+
+            while (iRow < iIndex) {
+                sContents += aText[iRow++] + '<br />';
+            }
+            destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+            if (iTextPos++ == iArrLength) {
+                iTextPos = 0;
+                iIndex++;
+                if (iIndex != aText.length) {
+                    iArrLength = aText[iIndex].length;
+                    setTimeout("typewriter()", 500);
+                }
+            } else {
+                setTimeout("typewriter()", iSpeed);
+            }
+        }
+        typewriter();
+    </script>
 
 </body>
 
