@@ -15,15 +15,22 @@
     -webkit-padding-end: 0px;
 }
 
+hr {
+    border: 1px solid #c06847;
+}
+
 header {
     display: block;
     overflow: hidden;
-    background-color: white;
-    opacity: 0.5;
+}
+
+header img {
+    float: left;
+    width: 20%;
 }
 
 header #nav-about {
-    float: left;
+    float: right;
     margin-left: 5%;
 }
 
@@ -37,70 +44,138 @@ header #nav-about ul li a {
     color: #c06847;
     font-family: fantasy;
     font-size: 19px;
+    letter-spacing: 0.5px;
+}
+
+header #nav-about ul li a:hover {
+    color: goldenrod;
 }
 
 #intro {
-    background-image: url(../images/myPic-brick-moreMe.jpg);
+    background-image: url(../images/myPic-brick-moreMe-crop.jpg);
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     height: 750px;
 }
 
 
 #intro #typedtext {
     font-family: 'Fredericka the Great', cursive;
-    font-size: 105px;
+    font-size: 55px;
     color: white;
     width: 100%;
-    text-align: center;
+    margin-left: 5%;
+    text-align: left;
     padding-top: 200px;
 }
 
-#about p {
-    text-align: center;
+#about {
+    width: 100%;
+    padding: 70px;
 }
 
 #about #myPic {
-    margin-left: 10%;
-    width: 90%;
+    width: 30%;
+    display: inline-block;
 }
 
 #about #myPic img {
     width: 100%;
 }
 
-#projects {
-    background-image: url(../images/myPic-brick-darker.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 750px;
+#about #bio {
+    width: 65%;
+    display: inline-block;
+    padding: 50px;
 }
 
-#projects p {
+#about #bio p {
+    text-align: left;
+    color: #c06847;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+#about #bio p a {
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#projects {}
+
+#projects #projects-main {
+    width: 80%;
+    margin: 0% 10%;
+    background-color: white;
+}
+
+#projects #please {
     color: white;
-    font-size: 30px;
+    font-size: 40px;
     font-family: fantasy;
     text-align: center;
-    margin: 100px;
+    padding: 50px 0px 25px;
+    background-color: #c06847;
+    background-attachment: scroll;
 }
 
 #projects .container {
     position: relative;
-    width: 31.8%;
-    border: 2px solid white;
-    border-radius: 30px;
+    width: 48%;
     display: inline-block;
-    padding: 5px;
-    margin: 10px;
+    padding: 20px;
+    vertical-align: top;
 }
+
+#projects section .pro-img {
+    box-shadow: 10px 10px whitesmoke;
+    border: 1px solid whitesmoke;
+    opacity: 0.9;
+    width: auto;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    position: relative;
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.9);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .9);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .8);
+}
+
+#projects section .pro-img::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    /* hide shadow behind image */
+    -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+}
+
+#projects #pro-skills {
+    padding: 15px;
+}
+
+#projects #pro-skills > span {}
 
 #projects section img {
     opacity: 0.9;
-    display: block;
     width: 100%;
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
+
+}
+
+#projects .pro-img > span {
+    text-align: center;
+    color: #c06847;
+    padding: 10px;
 }
 
 #projects .middle {
@@ -119,12 +194,47 @@ header #nav-about ul li a {
 }
 
 #projects .container:hover .middle {
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 #projects .text {
+    background-color: whitesmoke;
+    color: #c06847;
+    font-size: 14px;
+    margin: 5px;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+#projects .text > span {
+    display: block;
+}
+
+#projects .button > button {
+    display: inline-block;
     background-color: #c06847;
     color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 15px;
+    border: 5px solid whitesmoke;
+}
+
+#projects .class > img {
+    width: 10%;
+}
+
+#projects .pro-text > p {
+    text-align: center;
+    color: #c06847;
+    font-weight: 600;
+    font-size: 35px;
+    padding: 15px;
+}
+
+#projects .pro-text {
+    color: #c06847;
     font-size: 16px;
     padding: 30px 45px;
 }
@@ -132,29 +242,31 @@ header #nav-about ul li a {
 #footer {
     bottom: 0;
     width: 100%;
-    height: 60px;
-    margin-top: 20px;
+    height: 50px;
+    margin-top: 120px;
     display: block;
-    float: none;
-    clear: both;
-}
-
-#footer #copy {
-    color: #c06847;
-    font-family: fantasy;
-    font-size: 19px;
-    text-decoration: none;
-    float: left;
-    margin-left: 3%;
 }
 
 #footer #footer-social {
-    text-decoration: none;
+    width: auto;
+    display: inline-block;
+    padding: 15px;
     float: right;
 }
 
 #footer #footer-social li {
+    width: auto;
     display: inline-block;
+    text-decoration: none;
+    padding: 5px;
+}
+
+#footer #copy {
+    color: #c06847;
+    display: inline-block;
+    width: auto;
+    height: 60px;
+    line-height: 60px;
     padding: 15px;
 }
 

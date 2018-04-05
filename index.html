@@ -10,100 +10,112 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
 </head>
-<header>
-
-    <nav id="nav-about">
-        <ul>
-            <li><a href="">About Me</a></li>
-            <li><a href="">My Skills</a></li>
-            <li><a href="">My Projects</a></li>
-        </ul>
-    </nav>
-</header>
 
 <body>
+    <header>
+        <img src="images/yj.jpg">
+        <nav id="nav-about">
+            <ul>
+                <li><a href="">About Me</a></li>
+                <li><a href="">My Skills</a></li>
+                <li><a href="">My Projects</a></li>
+            </ul>
+        </nav>
+    </header>
     <main id="intro">
         <section id='typedtext'></section>
     </main>
     <main id="about">
-        <section id='myPic'><img src="images/map-pic-orange-noPic.jpg"></section>
+        <section id='myPic'><img src="images/map-pic-orange-crop.jpg"></section>
+        <section id="bio">
+            <p>Hi, I’m Yekaterina, a full stack web developer who is based in New York City. I'm fairly new to web development but I am a fast learner and am working on my programming skills daily. I love coding because it constantly challenges me to expand my knowledge. I'm comfortable working on full stack applications, and have experience in Node, Mongo and Express. But, I feel most comfortable in the browser with plain HTML, CSS and JavaScript and love using libraries like React, JQuery, and Bootstrap.<br><br> With a background in fashion, as I build websites, I am always thinking of ways to merge functionality and messaging into elegant design. I take great pride in working efficiently and being self-disciplined.
+                <br><br> My interests include technology, fashion, and traveling the world. I love to design and create clothing in my spare time, from concept to fashion shoots with models and photoshop work.
+                <br><br> Feel free to contact me or browse some of my projects using the links below.
+
+                <br><br><br>To download resume,<a href="images/RESUME%20fashion.docx" download> click here</a>
+            </p>
+        </section>
     </main>
-    <!--
-<main id="intro">
-    <p>I'm fairly new to web development but I am a fast learner and am working on my programming skills daily.
-        <br>Please have a look at some of the websites I have created so far.</p>
-<p>I'm a Czech Republic based web designer & front‑end developer focused on crafting clean  & user‑friendly experiences.</p>
-</main>
-<main id="skills">
-</main>
--->
     <main id="projects">
-        <p>Please have a look at some of the websites I have created so far</p>
-        <section id="link" class="container"><img src="images/link.png">
-            <div class="middle">
-                <div class="text">Link it</div>
-            </div>
-        </section>
-        <section id="nyc" class="container"><img src="images/nyc-news.png">
-            <div class="middle">
-                <div class="text">NYC today</div>
-            </div>
-        </section>
-        <section id="stitch" class="container"><img src="images/stitch.png">
-            <div class="middle">
-                <div class="text">Stitch</div>
-            </div>
+        <section id="projects-main">
+            <p id="please">Please have a look at some of the websites I have created so far</p>
+            <section id="stitch" class="container">
+                <section class="pro-text" id="stitch-text">
+                    <p>Stitch</p>
+                </section>
+                <section class="pro-img" id="stitch-img">
+                    <img src="images/stitch.png">
+                    <div class="middle">
+                        <div class="text">
+                            <span>An app is used for creating custom made clothing.</span>
+                            <a href="https://github.com/yjalette/custom-made-clothing-capstone-react" id="button-code" class="button"><button>Code</button></a>
+                            <a href="https://yjalette.github.io/custom-made-clothing-capstone-react/build/" id="button-demo" class="button"><button>Demo</button></a>
+                        </div>
+                    </div>
+                    <div id="pro-skills"><span>Implemented using: HTML5, CSS3, Javascript, jQuery, React.js, Node.js, MongoDB</span></div>
+                </section>
+            </section>
+            <section id="link" class="container">
+                <section class="pro-text" id="link-text">
+                    <p>Link it</p>
+                </section>
+                <section class="pro-img" id="link-img">
+                    <img src="images/link.png">
+                    <div class="middle">
+                        <div class="text">
+                            <span>An app that keeps all your links organized</span>
+                            <a href="https://github.com/yjalette/shopping-planner-node-capstone" id="button-code" class="button"><button>Code</button></a>
+                            <a href="https://shopping-planner-node-capstone.herokuapp.com/" id="button-demo" class="button"><button>Demo</button></a>
+                        </div>
+                    </div>
+                    <div id="pro-skills">
+                        <span>Implemented using: HTML5, CSS3, Javascript, jQuery, Node.js, MongoDB</span></div>
+                </section>
+            </section>
+            <section id="nyc" class="container">
+                <section class="pro-text" id="nyc-text">
+                    <p>NYC today</p>
+                </section>
+                <section class="pro-img" id="nyc-img">
+                    <img src="images/nyc-news.png">
+                    <div class="middle">
+                        <div class="text">
+                            <span>Latest NYC news and forecast</span>
+                            <a href="https://github.com/yjalette/articles-ny-news-api-casptone" id="button-code" class="button"><button>Code</button></a>
+                            <a href="https://yjalette.github.io/articles-ny-news-api-casptone/" id="button-demo" class="button"><button>Demo</button></a>
+                        </div>
+                    </div>
+                    <div id="pro-skills"><span>Implemented using: HTML5, CSS3, Javascript, jQuery</span></div>
+                </section>
+            </section>
+            <section id="fashion-q" class="container">
+                <section class="pro-text" id="fashion-text">
+                    <p>Fashion Quiz</p>
+                </section>
+                <section class="pro-img" id="fashion-img">
+                    <img src="images/fashion-test.jpg">
+                    <div class="middle">
+                        <div class="text">
+                            <span>quiz: "how good are you at fashion"</span>
+                            <a href="https://github.com/yjalette/fashion-quiz-app" id="button-code" class="button"><button>Code</button></a>
+                            <a href="https://yjalette.github.io/fashion-quiz-app/" id="button-demo" class="button"><button>Demo</button></a>
+                        </div>
+                    </div>
+                    <div id="pro-skills"><span>Implemented using: HTML5, CSS3, Javascript, jQuery</span></div>
+                </section>
+            </section>
         </section>
     </main>
     <main id="footer">
-        <p id="copy">&copy; 2018 Yekaterina Jalette</p>
+        <hr>
+        <div id="copy">&copy; 2018 Yekaterina Jalette </div>
         <ul id="footer-social">
             <li><a href=""><i class="fa fa-github"></i></a></li>
             <li><a href=""><i class="fa fa-envelope-o"></i></a></li>
             <li><a href=""><i class="fa fa-linkedin"></i></a></li>
         </ul>
     </main>
-
-    <script>
-        // set up text to print, each item in array is new line
-        var aText = new Array(
-            "Hi! I'm Yekaterina Jalette",
-            "I'm a New York based",
-            "front‑end developer"
-
-        );
-        var iSpeed = 100; // time delay of print out
-        var iIndex = 0; // start printing array at this posision
-        var iArrLength = aText[0].length; // the length of the text array
-        var iScrollAt = 20; // start scrolling up at this many lines
-
-        var iTextPos = 0; // initialise text position
-        var sContents = ''; // initialise contents variable
-        var iRow; // initialise current row
-
-        function typewriter() {
-            sContents = ' ';
-            iRow = Math.max(0, iIndex - iScrollAt);
-            var destination = document.getElementById("typedtext");
-
-            while (iRow < iIndex) {
-                sContents += aText[iRow++] + '<br />';
-            }
-            destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
-            if (iTextPos++ == iArrLength) {
-                iTextPos = 0;
-                iIndex++;
-                if (iIndex != aText.length) {
-                    iArrLength = aText[iIndex].length;
-                    setTimeout("typewriter()", 500);
-                }
-            } else {
-                setTimeout("typewriter()", iSpeed);
-            }
-        }
-        typewriter();
-    </script>
-
+    <script src="js/index.js"></script>
 </body>
 
 </html>
