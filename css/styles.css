@@ -3,7 +3,7 @@
     padding: 0px;
     border: 0px;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Alegreya Sans', sans-serif;
     /*reset Chrome user agent styles*/
     -webkit-margin-before: 0px;
     -webkit-margin-after: 0px;
@@ -22,32 +22,37 @@ hr {
 header {
     display: block;
     overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
 }
 
 header img {
     float: left;
     width: 20%;
+    padding: 10px;
 }
 
 header #nav-about {
     float: right;
-    margin-left: 5%;
+    padding: 10px;
 }
 
 header #nav-about ul li {
     padding: 5px;
     display: inline-block;
+    border: none;
 }
 
-header #nav-about ul li a {
+header #nav-about ul li button {
     text-decoration: none;
     color: #c06847;
-    font-family: fantasy;
     font-size: 19px;
     letter-spacing: 0.5px;
 }
 
-header #nav-about ul li a:hover {
+header #nav-about ul li button:hover {
     color: goldenrod;
 }
 
@@ -63,12 +68,12 @@ header #nav-about ul li a:hover {
 
 #intro #typedtext {
     font-family: 'Fredericka the Great', cursive;
-    font-size: 55px;
+    font-size: 65px;
     color: white;
     width: 100%;
     margin-left: 5%;
     text-align: left;
-    padding-top: 200px;
+    padding-top: 360px;
 }
 
 #about {
@@ -80,6 +85,7 @@ header #nav-about ul li a:hover {
     width: 30%;
     display: inline-block;
 }
+
 
 #about #myPic img {
     width: 100%;
@@ -95,7 +101,6 @@ header #nav-about ul li a:hover {
     text-align: left;
     color: #c06847;
     font-size: 18px;
-    font-family: sans-serif;
 }
 
 #about #bio p a {
@@ -115,7 +120,6 @@ header #nav-about ul li a:hover {
 #projects #please {
     color: white;
     font-size: 40px;
-    font-family: fantasy;
     text-align: center;
     padding: 50px 0px 25px;
     background-color: #c06847;
@@ -251,7 +255,7 @@ header #nav-about ul li a:hover {
     width: auto;
     display: inline-block;
     padding: 15px;
-    float: right;
+    float: left;
 }
 
 #footer #footer-social li {
@@ -262,7 +266,10 @@ header #nav-about ul li a:hover {
 }
 
 #footer #copy {
+    float: right;
     color: #c06847;
+    font-size: 23px;
+    font-weight: 400;
     display: inline-block;
     width: auto;
     height: 60px;
@@ -275,4 +282,88 @@ header #nav-about ul li a:hover {
 #footer #footer-social li a i {
     color: #c06847;
     font-size: 30px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    header #nav-about {
+        width: 100%;
+        padding: 5px;
+        text-align: center;
+        display: block;
+    }
+
+    header img {
+        width: 100%;
+        padding: 5px;
+        display: block;
+    }
+
+    #intro {
+        width: auto;
+    }
+
+    #intro #typedtext {
+        padding: 280px 5px;
+        width: 85%;
+        font-size: 40px;
+    }
+
+    #about #myPic {
+        width: 100%;
+        display: block;
+    }
+
+    #about #bio {
+        width: 100%;
+        display: block;
+        padding: 10px;
+    }
+
+    #projects #please {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    #projects .container {
+        width: 100%;
+        display: block;
+        padding: 10px;
+    }
+
+    #projects .text {
+        font-size: 12px;
+        margin: 5px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    #projects .pro-text > p {
+        font-size: 25px;
+        padding: 8px;
+    }
+
+    #footer #footer-social {
+        width: 45%;
+        display: inline-block;
+        padding: 5px;
+        text-align: center;
+    }
+
+    #footer #copy {
+        width: 45%;
+        font-size: 15px;
+        text-align: center;
+        display: inline-block;
+        padding: 5px;
+        line-height: 40px;
+    }
+
+    #footer #footer-social li a i {
+        font-size: 15px;
+    }
+
+
+
+
 }
