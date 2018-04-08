@@ -9,7 +9,7 @@ Portfolio for Yekaterina Jalette, full stack web developer.
 This app provides viewers an overview of skills and projects for Yekaterina Jalette.
 
 ## Working Prototype
-You can access a working prototype of the app at  https://yjalette.github.io/articles-ny-news-api-casptone/
+You can access a working prototype of the app at https://yjalette.github.io/portfolio/
 
 
 ### Technical part
