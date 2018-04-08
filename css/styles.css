@@ -49,6 +49,7 @@ header #nav-about ul li button {
     color: #c06847;
     font-size: 19px;
     letter-spacing: 0.5px;
+    background-color: transparent;
 }
 
 header #nav-about ul li button:hover {
