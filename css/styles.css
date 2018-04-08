@@ -22,7 +22,6 @@ hr {
 header {
     display: block;
     overflow: hidden;
-    position: fixed;
     top: 0;
     width: 100%;
     background-color: white;
@@ -54,6 +53,11 @@ header #nav-about ul li button {
 
 header #nav-about ul li button:hover {
     color: goldenrod;
+}
+
+#nav-about button:hover {
+    background: #ddd;
+    color: black;
 }
 
 #intro {
@@ -134,6 +138,7 @@ header #nav-about ul li button:hover {
     vertical-align: top;
 }
 
+
 #projects section .pro-img {
     box-shadow: 10px 10px whitesmoke;
     border: 1px solid whitesmoke;
@@ -209,11 +214,13 @@ header #nav-about ul li button:hover {
     padding: 30px;
     border-radius: 20px;
     border: 1px solid white;
+
 }
 
 #projects .text > span {
     display: block;
 }
+
 
 #projects .button > button {
     display: inline-block;
