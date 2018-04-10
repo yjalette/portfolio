@@ -114,7 +114,23 @@ header #nav-about ul li button:hover {
     font-weight: bold;
 }
 
-#projects {}
+#projects .pro-text > p {
+    color: #c06847;
+    font-weight: 600;
+    font-size: 35px;
+    padding: 15px;
+}
+
+#projects .pro-text {
+    padding: 30px 45px;
+    text-align: center;
+}
+
+#projects .pro-text > span {
+    color: dimgrey;
+    font-size: 18px;
+    font-weight: 500;
+}
 
 #projects #projects-main {
     width: 80%;
@@ -171,7 +187,10 @@ header #nav-about ul li button:hover {
     padding: 15px;
 }
 
-#projects #pro-skills > span {}
+
+#projects #pro-skills > span {
+    text-align: center;
+}
 
 #projects section img {
     opacity: 0.9;
@@ -237,19 +256,6 @@ header #nav-about ul li button:hover {
     width: 10%;
 }
 
-#projects .pro-text > p {
-    text-align: center;
-    color: #c06847;
-    font-weight: 600;
-    font-size: 35px;
-    padding: 15px;
-}
-
-#projects .pro-text {
-    color: #c06847;
-    font-size: 16px;
-    padding: 30px 45px;
-}
 
 #footer {
     bottom: 0;
