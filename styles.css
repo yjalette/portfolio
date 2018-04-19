@@ -86,6 +86,10 @@ header #nav-about ul li button:hover {
     padding: 70px;
 }
 
+#about #about-logo {
+    width: 50%;
+}
+
 #about #myPic {
     width: 30%;
     display: inline-block;
