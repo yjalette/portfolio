@@ -322,12 +322,17 @@ header #nav-about ul li button:hover {
     }
 
     #intro #typedtext {
-        padding: 280px 5px;
+        padding: 240px 5px;
         width: 85%;
         font-size: 40px;
     }
 
     #about #myPic {
+        width: 100%;
+        display: block;
+    }
+
+    #about #myPic img {
         width: 100%;
         display: block;
     }
@@ -338,6 +343,11 @@ header #nav-about ul li button:hover {
         padding: 10px;
     }
 
+    /*
+    #about #about-logo {
+        width: 50%;
+    }
+*/
     #projects #please {
         font-size: 20px;
         padding: 15px;
