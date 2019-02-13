@@ -16,7 +16,22 @@
 }
 
 hr {
-    border: 1px solid #c06847;
+    border: 2px solid #c06847;
+}
+
+button {
+    display: inline-block;
+    background-color: #c06847;
+    color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 15px;
+    border: 5px solid whitesmoke;
+    transition: 1s;
+}
+button:hover {
+    color: goldenrod;
+    background: black;
 }
 
 header {
@@ -31,6 +46,7 @@ header img {
     float: left;
     width: 20%;
     padding: 10px;
+    margin-top: 2%;
 }
 
 header #nav-about {
@@ -44,32 +60,14 @@ header #nav-about ul li {
     border: none;
 }
 
-header #nav-about ul li button {
-    text-decoration: none;
-    color: #c06847;
-    font-size: 19px;
-    letter-spacing: 0.5px;
-    background-color: transparent;
-}
-
-header #nav-about ul li button:hover {
-    color: goldenrod;
-}
-
-#nav-about button:hover {
-    background: #ddd;
-    color: black;
-}
-
 #intro {
-    background-image: url(../images/myPic-brick-moreMe-crop.jpg);
+    background-image: url(./images/myPic-brick-moreMe-crop.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 750px;
 }
-
 
 #intro #typedtext {
     font-family: 'Fredericka the Great', cursive;
@@ -188,12 +186,12 @@ header #nav-about ul li button:hover {
     bottom: 0;
 }
 
-#projects #pro-skills {
-    padding: 15px;
+#projects .pro-skills {
+    padding: 25px;
 }
 
 
-#projects #pro-skills > span {
+#projects .pro-skills > span {
     text-align: center;
 }
 
@@ -246,21 +244,9 @@ header #nav-about ul li button:hover {
     display: block;
 }
 
-
-#projects .button > button {
-    display: inline-block;
-    background-color: #c06847;
-    color: white;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 15px;
-    border: 5px solid whitesmoke;
-}
-
 #projects .class > img {
     width: 10%;
 }
-
 
 #footer {
     bottom: 0;
@@ -296,7 +282,6 @@ header #nav-about ul li button:hover {
     padding: 15px;
 }
 
-#footer #footer-social ul li a {}
 
 #footer #footer-social li a i {
     color: #c06847;
