@@ -27,6 +27,7 @@ button {
     margin: 10px;
     border-radius: 15px;
     border: 5px solid whitesmoke;
+    text-decoration: none;
     transition: 1s;
 }
 button:hover {
@@ -238,10 +239,6 @@ header #nav-about ul li {
     border-radius: 20px;
     border: 1px solid white;
 
-}
-
-#projects .text > span {
-    display: block;
 }
 
 #projects .class > img {
