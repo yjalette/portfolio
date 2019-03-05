@@ -301,7 +301,8 @@ header #nav-about ul li {
     }
 
     #intro {
-        width: auto;
+        height: 400px;
+        background-attachment: scroll;
     }
 
     #intro #typedtext {
