@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio for Yekaterina Jalette, full stack web developer.",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "http-server": "^0.12.3",
+    "nodejs-nodemailer-outlook": "^1.2.3",
+    "nodemailer": "^6.4.8",
+    "nodemailer-mailgun-transport": "^2.0.0",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yjalette/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yjalette/portfolio/issues"
+  },
+  "homepage": "https://github.com/yjalette/portfolio#readme"
+}

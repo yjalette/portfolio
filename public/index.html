@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yekaterina Jalette</title>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Fredericka+the+Great" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"
+        integrity="sha256-gSh8eotzb/CVvCREGPUNgIWuDnTYnZvVOQnRrP1eDjI=" crossorigin="anonymous"></script>
+    <!-- <script src="fetch.js" defer></script> -->
+</head>
+
+<body>
+    <nav>
+        <div class="nav__wrapper">
+            <div id="nav__left" class="nav__col">
+                <div class="button-big" id="nav__home-btn">
+                    <a href="#" class="button-small">
+                        <i class="fa fa-home"></i>
+                    </a>
+                </div>
+                <span id="nav__logo">KJ </span>
+            </div>
+            <ul id="nav__right" class="nav__col">
+                <li id="nav__about-btn" class="link">About Me</li>
+                <li id="nav__projects-btn" class="link">My Projects</li>
+                <li id="nav__contact-btn" class="link">Contact</li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div id="header__headline">
+            <h1>Hi, I'm a web developer, based in New York City.</h1>
+        </div>
+        <div id="header__canvas-wrapper"></div>
+    </header>
+    <main>
+        <section id="about" class="page">
+            <div class="about__wrapper">
+                <h2 id="about__title">About Me</h2>
+                <div id="about__box">
+                    <div id="about__img-wrapper">
+                        <img src="images/myPic.jpeg" id="about__img">
+                    </div>
+                    <p id="about__bio">Hi, I’m
+                        <select name="my_names" id="my_names">
+                            <option value="Katya">Katya</option>
+                            <option value="Kat">Kat</option>
+                            <option value="Katerina">Katerina</option>
+                            <option value="Yekaterina">Yekaterina</option>
+                        </select>
+                        , a full stack web developer who is based in New York City. I'm
+                        comfortable working
+                        on full stack applications, and have experience in <span class="highlight">Node</span>, <span
+                            class="highlight">Mongo</span> and <span class="highlight">Express</span>. But, I feel most
+                        comfortable in the browser with plain <span class="highlight">HTML</span>, <span
+                            class="highlight">CSS</span> and <span class="highlight">JavaScript </span> and love
+                        using libraries like <span class="highlight">React </span> <i class="fa fa-heart"></i> and <span
+                            class="highlight">Redux </span>. With a background in fashion,
+                        as I
+                        build websites, I am always
+                        thinking of ways to merge functionality and messaging into elegant design. I take great pride in
+                        working efficiently and being self-disciplined.
+                        <br>My interests include technology, fashion design, traveling the world <i
+                            class="fa fa-fighter-jet"></i>, and eating pizzza. I love to design and
+                        create clothing in my spare time, from concept to fashion shoots with models and photoshop work.
+                        <br>Please feel free to contact me or browse some of my projects using the links below.
+                        <br>To download my resume,<a href="images/resume.docx" class="link" download> click here</a>
+                    </p>
+
+                </div>
+            </div>
+            <!-- <div id="about__chart">
+                <div class="about__bars-wrapper">
+                    <svg>
+                        <rect />
+                    </svg>
+                </div>
+                <div class="about__bars-wrapper">
+                    <svg>
+                        <rect />
+                    </svg>
+                </div>
+                <div class="about__bars-wrapper">
+                    <svg>
+                        <rect />
+                    </svg>
+                </div>
+                <div class="about__bars-wrapper">
+                    <svg>
+                        <rect />
+                    </svg>
+                </div>
+            </div> -->
+        </section>
+
+        <section id="projects" class="page">
+            <h2>More Projects</h2>
+            <section class="projects_recent">
+
+            </section>
+            <section id="projects__wrapper">
+                <section id="grooming" class="projects__card">
+                    <div class="projects__card-box">
+                        <section class="projects__card-front">
+                            <img src="images/dogs-screenshot.png" class="projects__img">
+                        </section>
+                        <section class="projects__card-back">
+                            <div class="projects__slider">
+                                <img src="images/dogs-screenshot.png">
+                            </div>
+                            <div class="projects__title-wrapper">
+                                <p>Lojzika Grooming</p>
+                                <span>Dog Grooming And Adoption</span>
+                            </div>
+                            <div class="projects__links-wrapper">
+                                <a href="https://github.com/yjalette/dog-react-app" class="link"></a>
+                                <a href="https://dog-mern-app.herokuapp.com/" class="link"></a>
+                            </div>
+                            <div class="projects__technologies">
+                                <span>HTML5, SASS, React.js, Node.js, Mongo DB, Apis: Google, Pet
+                                    Finder,
+                                    News Api </span>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+
+
+                <section id="culinary" class="projects__card">
+                    <div class="projects__card-box">
+                        <section class="projects__card-front">
+                            <img src="images/screencapture-vaso.jpg" class="projects__img">
+                        </section>
+                        <section class="projects__card-back">
+                            <div class="projects__slider">
+                                <img src="images/screencapture-vaso.jpg">
+                            </div>
+                            <div class="projects__title-wrapper">
+                                <p>Vasiliki Vourliotaki</p>
+                                <span>Cooking School</span>
+                            </div>
+                            <div class="projects__links-wrapper">
+
+                                <a href="https://github.com/yjalette/cooking-school" class="link"></a>
+                                <a href="https://cooking-school-vourliota-66df5.web.app/" class="link"></a>
+
+                            </div>
+                            <div class="projects__technologies">
+                                <span>HTML5, CSS, React-Bootstrap, React.js, Firebase</span>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+
+                <section id="justsayda" class="projects__card">
+                    <div class="projects__card-box">
+                        <section class="projects__card-front">
+                            <img src="images/justsayda-screenshot.jpg" class="projects__img">
+                        </section>
+                        <section class="projects__card-back">
+                            <div class="projects__slider">
+                                <img src="images/justsayda-screenshot.jpg">
+                            </div>
+                            <div class="projects__title-wrapper">
+                                <p>DA Clothing</p>
+                                <span>Custom made clothing company</span>
+                            </div>
+                            <div class="projects__links-wrapper">
+                                <a href="https://github.com/yjalette/justSayDa" class="link"></a>
+                                <a href="https://www.justsayda.com/" class="link"></a>
+
+                            </div>
+                            <div class="projects__technologies">
+                                <span>HTML5, SASS, Javascript, Handlebars.js, Node.js, MySQL</span>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+                <section id="fitness" class="projects__card">
+                    <div class="projects__card-box">
+                        <section class="projects__card-front">
+                            <img src="images/frost-screenshot.png" class="projects__img">
+                        </section>
+                        <section class="projects__card-back">
+                            <div class="projects__slider">
+                                <img src="images/frost-screenshot.png">
+                            </div>
+                            <div class="projects__title-wrapper">
+                                <p>Frost Fitness</p>
+                                <span>Personal training and Nutrition coaching</span>
+                            </div>
+                            <div class="projects__links-wrapper">
+                                <a href="https://github.com/yjalette/frost-fitness-react" class="link"></a>
+                                <a href="https://yjalette.github.io/frost-fitness-react/" class="link"></a>
+                            </div>
+                            <div class="projects__technologies">
+                                <span>HTML5, SASS, Javascript, React.js, APIs, Chart.js</span></div>
+                        </section>
+                    </div>
+                </section>
+
+                <!-- <section id="link" class="projects__card">
+                    <section class="projects__card-front" id="link-text">
+                        <p>Link It</p>
+                        <span>An app that keeps all your links organized</span>
+                    </section>
+                    <section class="projects__img" id="link-img">
+                        <img src="images/link-screenshot.jpg">
+                        <div class="projects__links-wrapper">
+                            
+                                <a href="https://github.com/yjalette/shopping-planner-node-capstone" class="button-code" class="button"><button>Code</button></a>
+                                <a href="https://shopping-planner-node-capstone.herokuapp.com/" class="button-demo" class="button"><button>Demo</button></a>
+                            </div>
+                        </div>
+                        <div class="projects__technologies">
+                            <span>HTML5, CSS3, Javascript, Particles.js, Node.js, MongoDB</span></div>
+                    </section>
+                </section>
+                <section id="nyc" class="projects__card">
+                    <section class="projects__card-front" id="nyc-text">
+                        <p>NYC Today</p>
+                        <span>Latest NYC news and forecast</span>
+                    </section>
+                    <section class="projects__img" id="nyc-img">
+                        <img src="images/news-screenshot.jpg">
+                        <div class="projects__links-wrapper">
+                            
+                                <a href="https://github.com/yjalette/articles-ny-news-api-casptone" class="button-code" class="button"><button>Code</button></a>
+                                <a href="https://yjalette.github.io/articles-ny-news-api-casptone/" class="button-demo" class="button"><button>Demo</button></a>
+                            </div>
+                        </div>
+                        <div class="projects__technologies">
+                            <span>HTML5, CSS3, Javascript, jQuery</span></div>
+                    </section>
+                </section> -->
+            </section>
+        </section>
+
+        <section id="contact">
+            <h2 class="title">Contact Me</h2>
+            <div class="row" id="contact__wrapper">
+                <!-- <div class="col-right">
+                    <span class="subtitle">Thanks for taking the time to reach out.</span>
+                </div> -->
+                <form id="contact__form" method="post" class="col-left">
+                    <span id="contact__form-response"></span>
+                    <div class="contact__form-field">
+                        <label>email</label>
+                        <input type="email" id="contact__email" name="contact__email" />
+                    </div>
+                    <div class="contact__form-field">
+                        <label> subject</label>
+                        <input type="text" id="contact__subject" name="contact__subject" />
+                    </div>
+                    <div class="contact__form-field">
+                        <label>message</label>
+                        <textarea type="textarea" id="contact__message"></textarea>
+                    </div>
+                    <button type="submit" id="contact__btn" class="button-big">send</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <section id="side-menu">
+        <ul id="side-menu__social">
+            <li class="button-big">
+                <a href="https://github.com/yjalette" class="button-small">
+                    <i class="fa fa-github"></i>
+                </a>
+            </li>
+            <li class="button-big">
+                <a href="https://www.linkedin.com/in/yekaterina-jalette" class="button-small">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="button-big">
+                <a href="https://angel.co/yekaterina-jalette" class="button-small">
+                    <i class="fa fa-angellist"></i>
+                </a>
+            </li>
+            <li class="button-big">
+                <a href="mailto:katerina.jalette@gmail.com?Subject=Hello%20again" class="button-small">
+                    <i class="fa fa-envelope-o"></i>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+
+
+
+    <section id="footer">
+        <span id="footer__copyright">&copy; 2020 Yekaterina Jalette </span>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/sendEmail.js"></script>
+</body>
+
+</html>
